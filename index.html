@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kampung Naga — Eco Journey: Sustainable Tourism Experience</title>
+<meta name="description" content="Kampung yang menjaga waktu, menjaga bumi. Jelajahi wisata berkelanjutan di Kampung Naga, Tasikmalaya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C8 6 4 9 4 14a8 8 0 0 0 16 0c0-5-4-8-8-12Z"/><path d="M12 22v-8"/></svg>
+    <span>Kampung Naga</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about" data-id="Tentang" data-en="About">Tentang</a></li>
+    <li><a href="#map" data-id="Peta" data-en="Map">Peta</a></li>
+    <li><a href="#community" data-id="Komunitas" data-en="Community">Komunitas</a></li>
+    <li><a href="#marketplace" data-id="UMKM" data-en="Marketplace">UMKM</a></li>
+    <li><a href="#dashboard" data-id="Dampak" data-en="Impact">Dampak</a></li>
+    <li><a href="#plan" data-id="Rencanakan" data-en="Plan Visit">Rencanakan</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="lang-switch" id="langSwitch" aria-label="Ganti bahasa">ID / EN</button>
+    <button class="icon-btn" id="darkModeToggle" aria-label="Ganti mode gelap">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36A5.4 5.4 0 0 1 12 3Z"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="container hero-content">
+    <span class="hero-eyebrow">Eco Journey · Tasikmalaya, Jawa Barat</span>
+    <h1 id="heroHeadline"></h1>
+    <p class="lead" data-id="Kunjungi salah satu kampung adat Sunda yang paling konsisten menjaga harmoni antara manusia dan alam — dan pulang sebagai wisatawan yang lebih bertanggung jawab." data-en="Visit one of the Sundanese traditional villages most consistent in preserving harmony between people and nature — and leave as a more responsible traveler.">
+      Kunjungi salah satu kampung adat Sunda yang paling konsisten menjaga harmoni antara manusia dan alam — dan pulang sebagai wisatawan yang lebih bertanggung jawab.
+    </p>
+    <div class="hero-ctas">
+      <a href="#map" class="btn btn-primary" data-id="Jelajahi Kampung Naga" data-en="Explore Kampung Naga">Jelajahi Kampung Naga</a>
+      <a href="#plan" class="btn btn-outline" data-id="Rencanakan Kunjungan" data-en="Plan Your Visit">Rencanakan Kunjungan</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span data-id="Gulir" data-en="Scroll">Gulir</span>
+    <span class="dot-track"></span>
+  </div>
+</header>
+
+<main>
+<section id="about" class="container">
+  <div class="about-grid">
+    <div class="about-illustration reveal">
+      <svg viewBox="0 0 200 220" fill="none" stroke="#4A6741" stroke-width="2">
+        <path d="M40 200 L40 120 L100 70 L160 120 L160 200 Z"/>
+        <path d="M20 130 L100 60 L180 130"/>
+        <path d="M70 200 L70 150 L130 150 L130 200"/>
+        <path d="M100 150 L100 200"/>
+        <path d="M10 210 Q100 195 190 210"/>
+      </svg>
+    </div>
+    <div>
+      <span class="eyebrow reveal" data-id="Tentang Kampung Naga" data-en="About Kampung Naga">Tentang Kampung Naga</span>
+      <h2 class="section-title reveal" data-id="Warisan hidup yang dijaga dari generasi ke generasi" data-en="A living heritage guarded across generations">Warisan hidup yang dijaga dari generasi ke generasi</h2>
+      <p class="section-desc reveal" data-id="Kampung Naga adalah kampung adat Sunda yang mempertahankan pola hidup selaras alam: rumah beratap ijuk, sawah terasering, dan aturan adat (pikukuh) yang membatasi jumlah bangunan serta menjaga hutan larangan tetap lestari selama ratusan tahun." data-en="Kampung Naga is a Sundanese traditional village that maintains a nature-aligned way of life: sugar-palm-roofed houses, terraced rice fields, and customary rules (pikukuh) that limit the number of buildings and keep the forbidden forest preserved for centuries.">
+        Kampung Naga adalah kampung adat Sunda yang mempertahankan pola hidup selaras alam: rumah beratap ijuk, sawah terasering, dan aturan adat (pikukuh) yang membatasi jumlah bangunan serta menjaga hutan larangan tetap lestari selama ratusan tahun.
+      </p>
+
+      <div class="pillars reveal-stagger">
+        <div class="pillar-card">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2C8 6 4 9 4 14a8 8 0 0 0 16 0c0-5-4-8-8-12Z"/></svg></div>
+          <h4 data-id="Selaras Alam" data-en="Aligned with Nature">Selaras Alam</h4>
+          <p data-id="Membangun hanya seperlunya, menjaga hutan dan sungai tetap utuh." data-en="Building only what's necessary, keeping forest and river intact.">Membangun hanya seperlunya, menjaga hutan dan sungai tetap utuh.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><path d="M2 20c0-3.3 3-6 7-6s7 2.7 7 6"/></svg></div>
+          <h4 data-id="Selaras Sesama" data-en="Aligned with Others">Selaras Sesama</h4>
+          <p data-id="Gotong royong sebagai fondasi ekonomi dan sosial warga." data-en="Mutual cooperation as the foundation of community life.">Gotong royong sebagai fondasi ekonomi dan sosial warga.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v4M12 17v4M5 12H3M21 12h-2M6 6l1.5 1.5M16.5 16.5L18 18M18 6l-1.5 1.5M7.5 16.5L6 18"/><circle cx="12" cy="12" r="4"/></svg></div>
+          <h4 data-id="Selaras Tuhan" data-en="Aligned with the Divine">Selaras Tuhan</h4>
+          <p data-id="Setiap aturan adat berakar pada nilai spiritual yang dihormati." data-en="Every customary rule is rooted in respected spiritual values.">Setiap aturan adat berakar pada nilai spiritual yang dihormati.</p>
+        </div>
+      </div>
+
+      <div class="timeline reveal-stagger">
+        <div class="timeline-item"><div class="timeline-year">±1830</div><p data-id="Catatan kolonial pertama menyebut keberadaan kampung." data-en="First colonial record mentions the village's existence.">Catatan kolonial pertama menyebut keberadaan kampung.</p></div>
+        <div class="timeline-item"><div class="timeline-year">1956</div><p data-id="Kebakaran besar; kampung dibangun kembali sesuai pikukuh." data-en="Major fire; village rebuilt according to pikukuh.">Kebakaran besar; kampung dibangun kembali sesuai pikukuh.</p></div>
+        <div class="timeline-item"><div class="timeline-year">1980-an</div><p data-id="Mulai dikenal sebagai destinasi wisata budaya." data-en="Began to be known as a cultural tourism destination.">Mulai dikenal sebagai destinasi wisata budaya.</p></div>
+        <div class="timeline-item"><div class="timeline-year">Kini</div><p data-id="Model wisata berkelanjutan berbasis komunitas." data-en="Community-based sustainable tourism model.">Model wisata berkelanjutan berbasis komunitas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="map" class="container">
+  <span class="eyebrow reveal" data-id="Peta Interaktif" data-en="Interactive Map">Peta Interaktif</span>
+  <h2 class="section-title reveal" data-id="Jelajahi setiap sudut kampung" data-en="Explore every corner of the village">Jelajahi setiap sudut kampung</h2>
+  <p class="section-desc reveal" data-id="Klik penanda untuk melihat cerita, fakta budaya, dan aturan di setiap lokasi." data-en="Click a marker to see the story, cultural facts, and rules for each location.">Klik penanda untuk melihat cerita, fakta budaya, dan aturan di setiap lokasi.</p>
+
+  <div class="map-wrap reveal" id="mapWrap">
+    <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice">
+      <rect width="800" height="450" fill="#DCE6D2"/>
+      <path d="M0 320 Q200 260 400 320 T800 300 V450 H0 Z" fill="#C7D9B8"/>
+      <path d="M0 380 Q250 340 500 390 T800 370 V450 H0 Z" fill="#B9CFA4"/>
+      <path d="M550 0 L800 0 L800 220 Q650 150 550 0 Z" fill="#B7C9A0" opacity="0.7"/>
+      <path d="M300 150 Q330 250 320 400" stroke="#8FB6D6" stroke-width="10" fill="none" opacity="0.75"/>
+
+      <g class="map-pin" data-loc="rumah" transform="translate(230,230)">
+        <circle class="pulse" r="10" fill="#B4552D"/>
+        <circle class="core" r="9" fill="#6B4226" stroke="#fff" stroke-width="2"/>
+      </g>
+      <g class="map-pin" data-loc="masjid" transform="translate(320,190)">
+        <circle class="pulse" r="10" fill="#B4552D"/>
+        <circle class="core" r="9" fill="#4A6741" stroke="#fff" stroke-width="2"/>
+      </g>
+      <g class="map-pin" data-loc="sungai" transform="translate(300,300)">
+        <circle class="pulse" r="10" fill="#B4552D"/>
+        <circle class="core" r="9" fill="#3D6E8C" stroke="#fff" stroke-width="2"/>
+      </g>
+      <g class="map-pin" data-loc="sawah" transform="translate(150,340)">
+        <circle class="pulse" r="10" fill="#B4552D"/>
+        <circle class="core" r="9" fill="#8AA65C" stroke="#fff" stroke-width="2"/>
+      </g>
+      <g class="map-pin" data-loc="hutan" transform="translate(650,120)">
+        <circle class="pulse" r="10" fill="#B4552D"/>
+        <circle class="core" r="9" fill="#2E4A2B" stroke="#fff" stroke-width="2"/>
+      </g>
+      <g class="map-pin" data-loc="jalur" transform="translate(420,260)">
+        <circle class="pulse" r="10" fill="#B4552D"/>
+        <circle class="core" r="9" fill="#B4552D" stroke="#fff" stroke-width="2"/>
+      </g>
+    </svg>
+
+    <div class="map-panel" id="mapPanel">
+      <button class="close-panel" id="closeMapPanel" aria-label="Tutup">✕</button>
+      <span class="tag" id="panelTag">Lokasi</span>
+      <h4 id="panelTitle">—</h4>
+      <p id="panelDesc" style="font-size:0.88rem;color:var(--text-soft);margin-bottom:0.6rem;">—</p>
+      <div style="font-size:0.82rem;font-weight:700;margin-top:0.6rem;" data-id="Fakta Budaya" data-en="Cultural Fact">Fakta Budaya</div>
+      <p id="panelFact" style="font-size:0.85rem;color:var(--text-soft);">—</p>
+      <div style="font-size:0.82rem;font-weight:700;margin-top:0.8rem;" data-id="Aturan" data-en="Rules">Aturan</div>
+      <ul class="rule-list" id="panelRules"></ul>
+      <div style="font-size:0.82rem;font-weight:700;margin-top:0.8rem;" data-id="Durasi Kunjungan" data-en="Visit Duration">Durasi Kunjungan</div>
+      <p id="panelDuration" style="font-size:0.85rem;color:var(--text-soft);">—</p>
+      <button class="small-btn" style="margin-top:0.9rem;" data-id="+ Tambah ke Itinerary" data-en="+ Add to Itinerary">+ Tambah ke Itinerary</button>
+    </div>
+  </div>
+  <p class="map-hint reveal" data-id="Tip: klik penanda pada peta untuk membuka detail lokasi." data-en="Tip: click a marker on the map to open location details.">Tip: klik penanda pada peta untuk membuka detail lokasi.</p>
+</section>
+
+<section id="checklist" class="container">
+  <div class="checklist-section reveal">
+    <div class="checklist-top">
+      <div>
+        <span class="eyebrow" data-id="Panduan Wisata Bertanggung Jawab" data-en="Responsible Tourism Guide">Panduan Wisata Bertanggung Jawab</span>
+        <h2 class="section-title" style="margin-bottom:0;" data-id="Siapkan dirimu sebelum berkunjung" data-en="Prepare yourself before visiting">Siapkan dirimu sebelum berkunjung</h2>
+      </div>
+      <div class="progress-ring-wrap">
+        <svg class="progress-ring" width="64" height="64">
+          <circle class="track" cx="32" cy="32" r="26"/>
+          <circle class="fill" id="progressFill" cx="32" cy="32" r="26" stroke-dasharray="163" stroke-dashoffset="163"/>
+        </svg>
+        <div class="progress-label"><strong id="progressPercent">0%</strong><br><span data-id="selesai" data-en="complete">selesai</span></div>
+      </div>
+    </div>
+
+    <div class="checklist-columns">
+      <div class="checklist-col do">
+        <h4>✓ <span data-id="Do" data-en="Do">Lakukan</span></h4>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Hormati adat dan aturan setempat" data-en="Respect local customs and rules">Hormati adat dan aturan setempat</span></div>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Gunakan jasa pemandu lokal" data-en="Use a local guide">Gunakan jasa pemandu lokal</span></div>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Bawa botol minum sendiri" data-en="Bring your own water bottle">Bawa botol minum sendiri</span></div>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Dukung produk UMKM setempat" data-en="Support local small businesses">Dukung produk UMKM setempat</span></div>
+      </div>
+      <div class="checklist-col dont">
+        <h4>✕ <span data-id="Don't" data-en="Don't">Jangan</span></h4>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Membuang sampah sembarangan" data-en="Litter">Membuang sampah sembarangan</span></div>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Merusak tanaman atau fasilitas" data-en="Damage plants or facilities">Merusak tanaman atau fasilitas</span></div>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Berisik di area permukiman" data-en="Be noisy in residential areas">Berisik di area permukiman</span></div>
+        <div class="check-item"><div class="box"></div><span class="label" data-id="Memasuki area terlarang" data-en="Enter restricted areas">Memasuki area terlarang</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="community" class="container">
+  <span class="eyebrow reveal" data-id="Komunitas Lokal" data-en="Local Community">Komunitas Lokal</span>
+  <h2 class="section-title reveal" data-id="Wajah-wajah di balik kelestarian Kampung Naga" data-en="The faces behind Kampung Naga's preservation">Wajah-wajah di balik kelestarian Kampung Naga</h2>
+  <p class="section-desc reveal" data-id="Setiap kunjungan turut mendukung penghidupan warga — pengrajin, pemandu, dan pemilik homestay." data-en="Every visit helps support residents' livelihoods — artisans, guides, and homestay owners.">Setiap kunjungan turut mendukung penghidupan warga — pengrajin, pemandu, dan pemilik homestay.</p>
+
+  <div class="grid-cards reveal-stagger">
+    <div class="people-card">
+      <div class="photo"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+      <div class="body">
+        <div class="role" data-id="Pengrajin Anyaman" data-en="Weaving Artisan">Pengrajin Anyaman</div>
+        <h4>Ibu Onah</h4>
+        <p data-id="25 tahun menganyam bambu menjadi bakul dan tikar, diwariskan dari ibunya." data-en="25 years weaving bamboo into baskets and mats, passed down from her mother.">25 tahun menganyam bambu menjadi bakul dan tikar, diwariskan dari ibunya.</p>
+      </div>
+    </div>
+    <div class="people-card">
+      <div class="photo"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+      <div class="body">
+        <div class="role" data-id="Pemandu Wisata" data-en="Tour Guide">Pemandu Wisata</div>
+        <h4>Kang Dede</h4>
+        <p data-id="Menemani wisatawan sejak 2012, fasih bercerita sejarah dan pikukuh adat." data-en="Guiding visitors since 2012, fluent in village history and customary law.">Menemani wisatawan sejak 2012, fasih bercerita sejarah dan pikukuh adat.</p>
+      </div>
+    </div>
+    <div class="people-card">
+      <div class="photo"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10L12 3l9 7"/><path d="M5 9v11h14V9"/></svg></div>
+      <div class="body">
+        <div class="role" data-id="Pemilik Homestay" data-en="Homestay Owner">Pemilik Homestay</div>
+        <h4>Bapak Ujang</h4>
+        <p data-id="Menyediakan 2 kamar tradisional dengan sarapan khas Sunda." data-en="Offers 2 traditional rooms with authentic Sundanese breakfast.">Menyediakan 2 kamar tradisional dengan sarapan khas Sunda.</p>
+      </div>
+    </div>
+    <div class="people-card">
+      <div class="photo"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/></svg></div>
+      <div class="body">
+        <div class="role" data-id="Cerita Warga" data-en="Resident Story">Cerita Warga</div>
+        <h4 data-id="Menjaga Hutan Larangan" data-en="Guarding the Forbidden Forest">Menjaga Hutan Larangan</h4>
+        <p data-id="\"Kami tidak menebang, karena hutan itu yang menjaga air kami. data-en="\"We do not cut it down, because the forest is what keeps our water.>"Kami tidak menebang, karena hutan itu yang menjaga air kami."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="marketplace" class="container">
+  <span class="eyebrow reveal" data-id="Marketplace UMKM" data-en="UMKM Marketplace">Marketplace UMKM</span>
+  <h2 class="section-title reveal" data-id="Bawa pulang karya tangan warga Kampung Naga" data-en="Take home handmade crafts from Kampung Naga">Bawa pulang karya tangan warga Kampung Naga</h2>
+
+  <div class="filter-bar reveal" id="filterBar">
+    <button class="filter-chip active" data-filter="all" data-id="Semua" data-en="All">Semua</button>
+    <button class="filter-chip" data-filter="kerajinan" data-id="Kerajinan Bambu" data-en="Bamboo Craft">Kerajinan Bambu</button>
+    <button class="filter-chip" data-filter="anyaman" data-id="Anyaman" data-en="Weaving">Anyaman</button>
+    <button class="filter-chip" data-filter="makanan" data-id="Makanan" data-en="Food">Makanan</button>
+    <button class="filter-chip" data-filter="souvenir" data-id="Souvenir" data-en="Souvenir">Souvenir</button>
+  </div>
+
+  <div class="grid-cards reveal-stagger" id="productGrid">
+    <div class="product-card" data-cat="kerajinan">
+      <div class="photo"><span class="eco-tag" data-id="Ramah Lingkungan" data-en="Eco-Friendly">Ramah Lingkungan</span></div>
+      <div class="body">
+        <div class="maker" data-id="oleh Ibu Onah" data-en="by Ibu Onah">oleh Ibu Onah</div>
+        <h4 data-id="Bakul Bambu Anyam" data-en="Woven Bamboo Basket">Bakul Bambu Anyam</h4>
+        <div class="price-row"><span class="price">Rp 75.000</span><button class="small-btn" data-id="Pre-order" data-en="Pre-order">Pre-order</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-cat="anyaman">
+      <div class="photo"><span class="eco-tag" data-id="Ramah Lingkungan" data-en="Eco-Friendly">Ramah Lingkungan</span></div>
+      <div class="body">
+        <div class="maker" data-id="oleh Ibu Rasti" data-en="by Ibu Rasti">oleh Ibu Rasti</div>
+        <h4 data-id="Tikar Pandan" data-en="Pandan Mat">Tikar Pandan</h4>
+        <div class="price-row"><span class="price">Rp 120.000</span><button class="small-btn" data-id="Pre-order" data-en="Pre-order">Pre-order</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-cat="makanan">
+      <div class="photo"></div>
+      <div class="body">
+        <div class="maker" data-id="oleh Ibu Enung" data-en="by Ibu Enung">oleh Ibu Enung</div>
+        <h4 data-id="Opak Ketan Bakar" data-en="Grilled Sticky Rice Crackers">Opak Ketan Bakar</h4>
+        <div class="price-row"><span class="price">Rp 20.000</span><button class="small-btn" data-id="Pre-order" data-en="Pre-order">Pre-order</button></div>
+      </div>
+    </div>
+    <div class="product-card" data-cat="souvenir">
+      <div class="photo"><span class="eco-tag" data-id="Ramah Lingkungan" data-en="Eco-Friendly">Ramah Lingkungan</span></div>
+      <div class="body">
+        <div class="maker" data-id="oleh Kang Yayat" data-en="by Kang Yayat">oleh Kang Yayat</div>
+        <h4 data-id="Gantungan Kunci Bambu" data-en="Bamboo Keychain">Gantungan Kunci Bambu</h4>
+        <div class="price-row"><span class="price">Rp 15.000</span><button class="small-btn" data-id="Pre-order" data-en="Pre-order">Pre-order</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="container">
+  <span class="eyebrow reveal" data-id="Pengalaman Budaya" data-en="Cultural Experience">Pengalaman Budaya</span>
+  <h2 class="section-title reveal" data-id="Belajar langsung dari ahlinya" data-en="Learn directly from the experts">Belajar langsung dari ahlinya</h2>
+
+  <div class="grid-cards reveal-stagger">
+    <div class="activity-card">
+      <h4 data-id="Belajar Menganyam Bambu" data-en="Bamboo Weaving Class">Belajar Menganyam Bambu</h4>
+      <div class="meta-row">
+        <span>⏱ 2 <span data-id="jam" data-en="hrs">jam</span></span>
+        <span class="leaf-diff"><i class="leaf on"></i><i class="leaf"></i><i class="leaf"></i></span>
+        <span>Rp 50.000</span>
+      </div>
+      <div class="benefit-bar"><div class="fill" style="width:90%"></div></div>
+      <div class="benefit-note" data-id="90% pendapatan kembali ke pengrajin" data-en="90% of revenue goes back to the artisan">90% pendapatan kembali ke pengrajin</div>
+    </div>
+    <div class="activity-card">
+      <h4 data-id="Bertani di Sawah Terasering" data-en="Farming on Terraced Fields">Bertani di Sawah Terasering</h4>
+      <div class="meta-row">
+        <span>⏱ 3 <span data-id="jam" data-en="hrs">jam</span></span>
+        <span class="leaf-diff"><i class="leaf on"></i><i class="leaf on"></i><i class="leaf"></i></span>
+        <span>Rp 70.000</span>
+      </div>
+      <div class="benefit-bar"><div class="fill" style="width:85%"></div></div>
+      <div class="benefit-note" data-id="85% pendapatan kembali ke petani" data-en="85% of revenue goes back to farmers">85% pendapatan kembali ke petani</div>
+    </div>
+    <div class="activity-card">
+      <h4 data-id="Memasak Makanan Tradisional" data-en="Traditional Cooking Class">Memasak Makanan Tradisional</h4>
+      <div class="meta-row">
+        <span>⏱ 2.5 <span data-id="jam" data-en="hrs">jam</span></span>
+        <span class="leaf-diff"><i class="leaf on"></i><i class="leaf"></i><i class="leaf"></i></span>
+        <span>Rp 60.000</span>
+      </div>
+      <div class="benefit-bar"><div class="fill" style="width:80%"></div></div>
+      <div class="benefit-note" data-id="80% pendapatan kembali ke keluarga tuan rumah" data-en="80% of revenue goes back to the host family">80% pendapatan kembali ke keluarga tuan rumah</div>
+    </div>
+    <div class="activity-card">
+      <h4 data-id="Walking Tour Kampung" data-en="Village Walking Tour">Walking Tour Kampung</h4>
+      <div class="meta-row">
+        <span>⏱ 1.5 <span data-id="jam" data-en="hrs">jam</span></span>
+        <span class="leaf-diff"><i class="leaf on"></i><i class="leaf"></i><i class="leaf"></i></span>
+        <span>Rp 35.000</span>
+      </div>
+      <div class="benefit-bar"><div class="fill" style="width:95%"></div></div>
+      <div class="benefit-note" data-id="95% pendapatan kembali ke pemandu lokal" data-en="95% of revenue goes back to the local guide">95% pendapatan kembali ke pemandu lokal</div>
+    </div>
+  </div>
+</section>
+
+<section id="dashboard" class="container">
+  <div class="dashboard-section reveal">
+    <span class="eyebrow" data-id="Dashboard Keberlanjutan" data-en="Sustainability Dashboard">Dashboard Keberlanjutan</span>
+    <h2 class="section-title" data-id="Dampak nyata dari wisata bertanggung jawab" data-en="Real impact from responsible tourism">Dampak nyata dari wisata bertanggung jawab</h2>
+    <p class="section-desc" data-id="Data diperbarui setiap bulan, terbuka untuk semua." data-en="Data updated monthly, open to everyone.">Data diperbarui setiap bulan, terbuka untuk semua.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="num" data-target="1240" data-suffix="">0</div><div class="label" data-id="Wisatawan bulan ini" data-en="Visitors this month">Wisatawan bulan ini</div></div>
+      <div class="stat-card"><div class="num" data-target="86" data-suffix=" kg">0</div><div class="label" data-id="Sampah plastik dikurangi" data-en="Plastic waste reduced">Sampah plastik dikurangi</div></div>
+      <div class="stat-card"><div class="num" data-target="32" data-suffix="">0</div><div class="label" data-id="UMKM terbantu" data-en="Small businesses supported">UMKM terbantu</div></div>
+      <div class="stat-card"><div class="num" data-target="45" data-suffix=" jt">0</div><div class="label" data-id="Pendapatan lokal (Rp)" data-en="Local income (Rp)">Pendapatan lokal (Rp)</div></div>
+      <div class="stat-card"><div class="num" data-target="150" data-suffix="">0</div><div class="label" data-id="Pohon didukung konservasi" data-en="Trees supported by conservation">Pohon didukung konservasi</div></div>
+      <div class="stat-card"><div class="num" data-target="78" data-suffix="%">0</div><div class="label" data-id="Selesaikan Responsible Checklist" data-en="Completed Responsible Checklist">Selesaikan Responsible Checklist</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="container">
+  <span class="eyebrow reveal" data-id="Eco Journey Quiz" data-en="Eco Journey Quiz">Eco Journey Quiz</span>
+  <h2 class="section-title reveal" data-id="Seberapa siap kamu jadi wisatawan bertanggung jawab?" data-en="How ready are you to be a responsible traveler?">Seberapa siap kamu jadi wisatawan bertanggung jawab?</h2>
+
+  <div class="quiz-box reveal" id="quizBox">
+    <div class="quiz-progress"><div class="fill" id="quizProgressFill" style="width:0%"></div></div>
+    <div id="quizContainer"></div>
+  </div>
+</section>
+
+<section id="tour" class="container">
+  <span class="eyebrow reveal" data-id="Virtual Tour 360°" data-en="360° Virtual Tour">Virtual Tour 360°</span>
+  <h2 class="section-title reveal" data-id="Rasakan suasana kampung sebelum berkunjung" data-en="Experience the village atmosphere before you visit">Rasakan suasana kampung sebelum berkunjung</h2>
+
+  <div class="tour-viewer reveal" id="tourViewer">
+    <div class="tour-hotspot" style="top:35%;left:25%;" data-caption="Rumah adat dengan atap ijuk khas — tidak boleh diubah bentuknya sesuai pikukuh."></div>
+    <div class="tour-hotspot" style="top:55%;left:60%;" data-caption="Sawah terasering yang masih diolah dengan cara tradisional."></div>
+    <div class="tour-hotspot" style="top:25%;left:75%;" data-caption="Batas hutan larangan — area yang tidak boleh dimasuki wisatawan."></div>
+    <div class="tour-caption" id="tourCaption" data-id="Klik titik pada gambar untuk mendengar cerita singkat dari warga." data-en="Click a point on the image to hear a short story from a resident.">Klik titik pada gambar untuk mendengar cerita singkat dari warga.</div>
+  </div>
+  <div class="tour-controls">
+    <button class="btn btn-dark" id="audioToggle" data-id="🔊 Dengan Narasi" data-en="🔊 With Narration">🔊 Dengan Narasi</button>
+  </div>
+</section>
+
+<section id="events" class="container">
+  <span class="eyebrow reveal" data-id="Event & Festival" data-en="Events & Festivals">Event & Festival</span>
+  <h2 class="section-title reveal" data-id="Kalender kegiatan kampung" data-en="Village activity calendar">Kalender kegiatan kampung</h2>
+
+  <div class="calendar-legend reveal">
+    <span><i class="dot festival"></i> <span data-id="Festival Budaya" data-en="Cultural Festival">Festival Budaya</span></span>
+    <span><i class="dot workshop"></i> <span data-id="Workshop" data-en="Workshop">Workshop</span></span>
+    <span><i class="dot gotong"></i> <span data-id="Gotong Royong" data-en="Community Work">Gotong Royong</span></span>
+    <span><i class="dot edukasi"></i> <span data-id="Edukasi Lingkungan" data-en="Environmental Education">Edukasi Lingkungan</span></span>
+  </div>
+
+  <div class="calendar-grid reveal" id="calendarGrid"></div>
+</section>
+
+<section id="plan" class="container">
+  <span class="eyebrow reveal" data-id="Rencanakan Kunjungan" data-en="Plan Your Visit">Rencanakan Kunjungan</span>
+  <h2 class="section-title reveal" data-id="Susun perjalananmu dalam beberapa langkah" data-en="Plan your trip in a few steps">Susun perjalananmu dalam beberapa langkah</h2>
+
+  <div class="stepper-bar reveal">
+    <div class="step-dot active"></div><div class="step-dot"></div><div class="step-dot"></div>
+  </div>
+
+  <div class="plan-grid reveal">
+    <div class="plan-card">
+      <div class="form-row">
+        <label data-id="Tanggal Kunjungan" data-en="Visit Date">Tanggal Kunjungan</label>
+        <input type="date" id="visitDate">
+      </div>
+      <div class="form-row">
+        <label data-id="Jumlah Orang" data-en="Number of People">Jumlah Orang</label>
+        <div class="counter-input">
+          <button id="decreasePerson">−</button>
+          <span id="personCount">2</span>
+          <button id="increasePerson">+</button>
+        </div>
+      </div>
+      <div class="form-row">
+        <label data-id="Kota Asal (untuk estimasi jejak karbon)" data-en="City of Origin (for carbon estimate)">Kota Asal (untuk estimasi jejak karbon)</label>
+        <select id="originCity">
+          <option value="20">Bandung (~20 km)</option>
+          <option value="140">Jakarta (~140 km)</option>
+          <option value="300">Yogyakarta (~300 km)</option>
+          <option value="10">Tasikmalaya kota (~10 km)</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label data-id="Pilih Aktivitas" data-en="Choose Activities">Pilih Aktivitas</label>
+        <div class="chip-select" id="activityChips">
+          <button class="chip" data-price="50000" data-id="Anyaman Bambu" data-en="Bamboo Weaving">Anyaman Bambu</button>
+          <button class="chip" data-price="70000" data-id="Bertani" data-en="Farming">Bertani</button>
+          <button class="chip" data-price="60000" data-id="Memasak" data-en="Cooking">Memasak</button>
+          <button class="chip" data-price="35000" data-id="Walking Tour" data-en="Walking Tour">Walking Tour</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-card">
+      <h4 style="color:#fff;margin-bottom:1rem;" data-id="Ringkasan" data-en="Summary">Ringkasan</h4>
+      <div class="summary-row"><span data-id="Guide lokal" data-en="Local guide">Guide lokal</span><span>Rp 100.000</span></div>
+      <div class="summary-row"><span data-id="Aktivitas" data-en="Activities">Aktivitas</span><span id="summaryActivity">Rp 0</span></div>
+      <div class="summary-row"><span data-id="Jumlah orang" data-en="People">Jumlah orang</span><span id="summaryPeople">2</span></div>
+      <div class="summary-row total"><span data-id="Total estimasi" data-en="Total estimate">Total estimasi</span><span id="summaryTotal">Rp 100.000</span></div>
+      <div class="carbon-note">
+        🌱 <span data-id="Estimasi jejak karbon:" data-en="Estimated carbon footprint:">Estimasi jejak karbon:</span>
+        <strong id="carbonEstimate">2.8 kg CO₂</strong>
+      </div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1.2rem;" data-id="Lanjutkan Booking" data-en="Continue Booking">Lanjutkan Booking</button>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="container">
+  <span class="eyebrow reveal" data-id="FAQ" data-en="FAQ">FAQ</span>
+  <h2 class="section-title reveal" data-id="Pertanyaan yang sering diajukan" data-en="Frequently asked questions">Pertanyaan yang sering diajukan</h2>
+
+  <div class="reveal" id="faqList">
+    <div class="faq-item">
+      <button class="faq-question"><span data-id="Apakah wisatawan asing boleh menginap?" data-en="Can foreign tourists stay overnight?">Apakah wisatawan asing boleh menginap?</span><span class="plus">+</span></button>
+      <div class="faq-answer"><p data-id="Boleh, melalui homestay warga yang terdaftar. Disarankan memesan minimal 3 hari sebelumnya." data-en="Yes, through registered resident homestays. Booking at least 3 days in advance is recommended.">Boleh, melalui homestay warga yang terdaftar. Disarankan memesan minimal 3 hari sebelumnya.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span data-id="Apakah ada larangan berpakaian?" data-en="Are there any dress code restrictions?">Apakah ada larangan berpakaian?</span><span class="plus">+</span></button>
+      <div class="faq-answer"><p data-id="Disarankan berpakaian sopan dan tertutup, terutama saat memasuki area rumah adat dan masjid." data-en="Modest, covered clothing is recommended, especially when entering traditional houses and the mosque.">Disarankan berpakaian sopan dan tertutup, terutama saat memasuki area rumah adat dan masjid.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span data-id="Apakah bisa membawa drone atau kamera profesional?" data-en="Can I bring a drone or professional camera?">Apakah bisa membawa drone atau kamera profesional?</span><span class="plus">+</span></button>
+      <div class="faq-answer"><p data-id="Drone tidak diizinkan tanpa izin khusus dari tetua adat. Kamera pribadi diperbolehkan untuk penggunaan non-komersial." data-en="Drones are not allowed without special permission from village elders. Personal cameras are allowed for non-commercial use.">Drone tidak diizinkan tanpa izin khusus dari tetua adat. Kamera pribadi diperbolehkan untuk penggunaan non-komersial.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question"><span data-id="Bagaimana jika saya datang tanpa pemandu?" data-en="What if I arrive without a guide?">Bagaimana jika saya datang tanpa pemandu?</span><span class="plus">+</span></button>
+      <div class="faq-answer"><p data-id="Pemandu lokal wajib untuk memasuki area permukiman, dapat dipesan langsung di pos masuk atau melalui website ini." data-en="A local guide is required to enter the settlement area, bookable directly at the entrance post or through this website.">Pemandu lokal wajib untuk memasuki area permukiman, dapat dipesan langsung di pos masuk atau melalui website ini.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo" style="color:#fff;margin-bottom:0.8rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="22" height="22"><path d="M12 2C8 6 4 9 4 14a8 8 0 0 0 16 0c0-5-4-8-8-12Z"/></svg>
+          <span>Kampung Naga</span>
+        </div>
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);max-width:280px;" data-id="Kampung yang menjaga waktu, menjaga bumi. Wisata berkelanjutan berbasis komunitas di Tasikmalaya, Jawa Barat." data-en="A village that guards time and guards the earth. Community-based sustainable tourism in Tasikmalaya, West Java.">Kampung yang menjaga waktu, menjaga bumi. Wisata berkelanjutan berbasis komunitas di Tasikmalaya, Jawa Barat.</p>
+        <div class="sdg-badges">
+          <div class="sdg-badge sdg8">SDG 8</div>
+          <div class="sdg-badge sdg15">SDG 15</div>
+        </div>
+      </div>
+      <div>
+        <h5 data-id="Kontak" data-en="Contact">Kontak</h5>
+        <ul>
+          <li><a href="#">+62 812-3456-7890</a></li>
+          <li><a href="#">halo@kampungnaga.id</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-id="Media Sosial" data-en="Social Media">Media Sosial</h5>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-id="Partner" data-en="Partners">Partner</h5>
+        <ul>
+          <li><a href="#">Dinas Pariwisata Tasikmalaya</a></li>
+          <li><a href="#">Komunitas Adat Sunda</a></li>
+          <li><a href="#">Yayasan Konservasi Alam</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Kampung Naga Eco Journey.</span>
+      <span data-id="Dibuat dengan hormat untuk masyarakat Kampung Naga." data-en="Made with respect for the people of Kampung Naga.">Dibuat dengan hormat untuk masyarakat Kampung Naga.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#plan" class="btn btn-primary sticky-cta" id="stickyCta" data-id="Rencanakan Kunjungan" data-en="Plan Your Visit">Rencanakan Kunjungan</a>
+
+<div class="badge-modal-backdrop" id="badgeModal">
+  <div class="badge-modal">
+    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="9" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
+    <h3 data-id="Responsible Traveler" data-en="Responsible Traveler">Responsible Traveler</h3>
+    <p data-id="Kamu sudah siap menjadi wisatawan yang bertanggung jawab. Tunjukkan lencana ini saat check-in!" data-en="You're ready to be a responsible traveler. Show this badge at check-in!">Kamu sudah siap menjadi wisatawan yang bertanggung jawab. Tunjukkan lencana ini saat check-in!</p>
+    <button class="btn btn-dark" id="closeBadgeModal" data-id="Tutup" data-en="Close">Tutup</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
