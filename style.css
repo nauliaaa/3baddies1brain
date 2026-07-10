@@ -615,9 +615,7 @@ section {
   margin-top: 0.3rem;
 }
 
-/* ==========================================================================
-   Interactive Village Map
-   ========================================================================== */
+
 .map-wrap {
   position: relative;
   background: var(--surface);
@@ -876,9 +874,7 @@ section {
   margin-bottom: var(--sp-3);
 }
 
-/* ==========================================================================
-   Cards grid (Community / Cultural / Marketplace shared patterns)
-   ========================================================================== */
+
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1072,9 +1068,7 @@ section {
   margin-top: 0.3rem;
 }
 
-/* ==========================================================================
-   Sustainability Dashboard
-   ========================================================================== */
+
 .dashboard-section {
   background: var(--accent-dark);
   color: #fff;
@@ -1116,9 +1110,7 @@ section {
   margin-top: 0.2rem;
 }
 
-/* ==========================================================================
-   Eco Quiz
-   ========================================================================== */
+
 .quiz-box {
   max-width: 620px;
   margin: 0 auto;
@@ -1175,9 +1167,7 @@ section {
   color: var(--accent-dark);
 }
 
-/* ==========================================================================
-   Virtual Tour
-   ========================================================================== */
+
 .tour-viewer {
   aspect-ratio: 16/8;
   border-radius: var(--radius);
@@ -1201,14 +1191,23 @@ section {
   cursor: pointer;
   animation: hotspotPulse 2.6s ease-in-out infinite;
 }
-@keyframes hotspotPulse {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
-  }
+#panelImage {
+  width: 100%;
+  height: 140px;
+  object-fit: cover; 
+  border-radius: 8px; 
+  margin-bottom: 0.8rem;
+  display: none; 
+}
+.map-pin .pulse {
+  animation: none !important;      
+  transform: none !important;  
+  transform: scale(1) !important;    
+  opacity: 0.5 !important;        
+}
+.map-pin:hover .pulse {
+  opacity: 0.9 !important;
+  cursor: pointer;
 }
 .tour-caption {
   position: absolute;
@@ -1228,9 +1227,7 @@ section {
   margin-top: var(--sp-2);
 }
 
-/* ==========================================================================
-   Events calendar
-   ========================================================================== */
+
 .calendar-legend {
   display: flex;
   gap: var(--sp-3);
@@ -1299,9 +1296,7 @@ section {
   border-color: var(--accent);
 }
 
-/* ==========================================================================
-   Plan Your Visit
-   ========================================================================== */
+
 .stepper-bar {
   display: flex;
   gap: 0.5rem;
@@ -1407,9 +1402,7 @@ section {
   margin-top: 0.8rem;
 }
 
-/* ==========================================================================
-   FAQ Accordion
-   ========================================================================== */
+
 .faq-item {
   border-bottom: 1px solid var(--border);
 }
@@ -1442,9 +1435,7 @@ section {
   padding: 0 0.2rem 1.1rem;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+
 footer {
   background: var(--c-text);
   color: rgba(255, 255, 255, 0.85);
@@ -1506,9 +1497,7 @@ footer {
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* ==========================================================================
-   Sticky CTA
-   ========================================================================== */
+
 .sticky-cta {
   position: fixed;
   bottom: var(--sp-2);
@@ -1521,9 +1510,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
+
 @media (max-width: 900px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -1563,7 +1550,6 @@ footer {
   }
 }
 
-/* Focus visibility for accessibility */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -1571,3 +1557,29 @@ select:focus-visible {
   outline: 2px solid var(--c-terracotta);
   outline-offset: 2px;
 }
+
+.section-reveal, section, .map-container, #map, #checklist, #dashboard, #quiz, #tour, #plan, #faq {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+.sticky-cta.is-visible {
+  transform: translateY(0);
+}
+
+#panorama-tour {
+  width: 100%;
+  height: 500px; /* Kamu bisa ubah tingginya sesuai selera */
+  background: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 720px) {
+  #panorama-tour {
+    height: 350px;
+  }
+}
+
