@@ -316,167 +316,100 @@
           lokasi.
         </p>
 
-        <div class="map-wrap reveal" id="mapWrap">
-          <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice">
-            <rect width="800" height="450" fill="#DCE6D2" />
-            <path
-              d="M0 320 Q200 260 400 320 T800 300 V450 H0 Z"
-              fill="#C7D9B8"
-            />
-            <path
-              d="M0 380 Q250 340 500 390 T800 370 V450 H0 Z"
-              fill="#B9CFA4"
-            />
-            <path
-              d="M550 0 L800 0 L800 220 Q650 150 550 0 Z"
-              fill="#B7C9A0"
-              opacity="0.7"
-            />
-            <path
-              d="M300 150 Q330 250 320 400"
-              stroke="#8FB6D6"
-              stroke-width="10"
-              fill="none"
-              opacity="0.75"
-            />
+        <div class="map-legend reveal">
+  <span class="legend-item"><span class="legend-dot" style="background:#6b4226"></span>Permukiman</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#4a6741"></span>Tempat Ibadah</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#3d6e8c"></span>Alam</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#8aa65c"></span>Pertanian</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#2e4a2b"></span>Kawasan Suci</span>
+  <span class="legend-item"><span class="legend-dot" style="background:#b4552d"></span>Akses Utama</span>
+</div>
 
-            <g class="map-pin" data-loc="rumah" transform="translate(230,230)">
-              <circle class="pulse" r="10" fill="#B4552D" />
-              <circle
-                class="core"
-                r="9"
-                fill="#6B4226"
-                stroke="#fff"
-                stroke-width="2"
-              />
-            </g>
-            <g class="map-pin" data-loc="masjid" transform="translate(320,190)">
-              <circle class="pulse" r="10" fill="#B4552D" />
-              <circle
-                class="core"
-                r="9"
-                fill="#4A6741"
-                stroke="#fff"
-                stroke-width="2"
-              />
-            </g>
-            <g class="map-pin" data-loc="sungai" transform="translate(300,300)">
-              <circle class="pulse" r="10" fill="#B4552D" />
-              <circle
-                class="core"
-                r="9"
-                fill="#3D6E8C"
-                stroke="#fff"
-                stroke-width="2"
-              />
-            </g>
-            <g class="map-pin" data-loc="sawah" transform="translate(150,340)">
-              <circle class="pulse" r="10" fill="#B4552D" />
-              <circle
-                class="core"
-                r="9"
-                fill="#8AA65C"
-                stroke="#fff"
-                stroke-width="2"
-              />
-            </g>
-            <g class="map-pin" data-loc="hutan" transform="translate(650,120)">
-              <circle class="pulse" r="10" fill="#B4552D" />
-              <circle
-                class="core"
-                r="9"
-                fill="#2E4A2B"
-                stroke="#fff"
-                stroke-width="2"
-              />
-            </g>
-            <g class="map-pin" data-loc="jalur" transform="translate(420,260)">
-              <circle class="pulse" r="10" fill="#B4552D" />
-              <circle
-                class="core"
-                r="9"
-                fill="#B4552D"
-                stroke="#fff"
-                stroke-width="2"
-              />
-            </g>
-          </svg>
+<div class="map-layout reveal" id="mapWrap">
+  <div class="map-stage">
+    <svg viewBox="0 0 800 450" preserveAspectRatio="xMidYMid slice">
+      <image href="images/Peta-Kampung-Naga.jpg" x="0" y="0" width="800" height="450" preserveAspectRatio="xMidYMid slice" />
 
-          <div class="map-panel" id="mapPanel">
-            <button class="close-panel" id="closeMapPanel" aria-label="Tutup">
-              ✕
-            </button>
+      <g class="map-compass" transform="translate(755,45)">
+        <circle r="18" fill="#fff" stroke="var(--border)" />
+        <text class="map-compass-label" x="0" y="5" text-anchor="middle">N</text>
+      </g>
 
-            <img
-              id="panelImage"
-              src=""
-              alt="Lokasi"
-              style="
-                width: 100%;
-                height: 120px;
-                object-fit: cover;
-                border-radius: 8px;
-                margin-bottom: 0.8rem;
-                display: none;
-              "
-            />
+      <g class="map-pin" data-loc="rumah" transform="translate(230,230)">
+        <circle class="pulse" r="10" fill="#B4552D" />
+        <circle class="core" r="9" fill="#6B4226" stroke="#fff" stroke-width="2" />
+        <text class="pin-number" y="4">1</text>
+      </g>
+      <g class="map-pin" data-loc="masjid" transform="translate(320,190)">
+        <circle class="pulse" r="10" fill="#B4552D" />
+        <circle class="core" r="9" fill="#4A6741" stroke="#fff" stroke-width="2" />
+        <text class="pin-number" y="4">2</text>
+      </g>
+      <g class="map-pin" data-loc="sungai" transform="translate(300,300)">
+        <circle class="pulse" r="10" fill="#B4552D" />
+        <circle class="core" r="9" fill="#3D6E8C" stroke="#fff" stroke-width="2" />
+        <text class="pin-number" y="4">3</text>
+      </g>
+      <g class="map-pin" data-loc="sawah" transform="translate(150,340)">
+        <circle class="pulse" r="10" fill="#B4552D" />
+        <circle class="core" r="9" fill="#8AA65C" stroke="#fff" stroke-width="2" />
+        <text class="pin-number" y="4">4</text>
+      </g>
+      <g class="map-pin" data-loc="hutan" transform="translate(650,120)">
+        <circle class="pulse" r="10" fill="#B4552D" />
+        <circle class="core" r="9" fill="#2E4A2B" stroke="#fff" stroke-width="2" />
+        <text class="pin-number" y="4">5</text>
+      </g>
+      <g class="map-pin" data-loc="jalur" transform="translate(420,260)">
+        <circle class="pulse" r="10" fill="#B4552D" />
+        <circle class="core" r="9" fill="#B4552D" stroke="#fff" stroke-width="2" />
+        <text class="pin-number" y="4">6</text>
+      </g>
+    </svg>
 
-            <span class="tag" id="panelTag">Lokasi</span>
-            <h4 id="panelTitle">-</h4>
-            <p
-              id="panelDesc"
-              style="
-                font-size: 0.88rem;
-                color: var(--text-soft);
-                margin-bottom: 0.6rem;
-              "
-            >
-              -
-            </p>
-            <div
-              style="font-size: 0.82rem; font-weight: 700; margin-top: 0.6rem"
-              data-id="Fakta Budaya"
-              data-en="Cultural Fact"
-            >
-              Fakta Budaya
-            </div>
-            <p
-              id="panelFact"
-              style="font-size: 0.85rem; color: var(--text-soft)"
-            >
-              -
-            </p>
-            <div
-              style="font-size: 0.82rem; font-weight: 700; margin-top: 0.8rem"
-              data-id="Aturan"
-              data-en="Rules"
-            >
-              Aturan
-            </div>
-            <ul class="rule-list" id="panelRules"></ul>
-            <div
-              style="font-size: 0.82rem; font-weight: 700; margin-top: 0.8rem"
-              data-id="Durasi Kunjungan"
-              data-en="Visit Duration"
-            >
-              Durasi Kunjungan
-            </div>
-            <p
-              id="panelDuration"
-              style="font-size: 0.85rem; color: var(--text-soft)"
-            >
-              -
-            </p>
-            <button
-              class="small-btn"
-              style="margin-top: 0.9rem"
-              data-id="+ Tambah ke Itinerary"
-              data-en="+ Add to Itinerary"
-            >
-              + Tambah ke Itinerary
-            </button>
-          </div>
-        </div>
+    <div class="map-panel" id="mapPanel">
+      <button class="close-panel" id="closeMapPanel" aria-label="Tutup">✕</button>
+      <img id="panelImage" class="panel-image" src="" alt="Lokasi" />
+      <span class="tag" id="panelTag">Lokasi</span>
+      <h4 id="panelTitle">-</h4>
+      <p id="panelDesc" class="panel-desc">-</p>
+      <div class="panel-label" data-id="Fakta Budaya" data-en="Cultural Fact">Fakta Budaya</div>
+      <p id="panelFact" class="panel-fact">-</p>
+      <div class="panel-label" data-id="Aturan" data-en="Rules">Aturan</div>
+      <ul class="rule-list" id="panelRules"></ul>
+      <div class="panel-label" data-id="Durasi Kunjungan" data-en="Visit Duration">Durasi Kunjungan</div>
+      <p id="panelDuration" class="panel-duration">-</p>
+      <button class="small-btn" style="margin-top: 0.9rem" data-id="+ Tambah ke Itinerary" data-en="+ Add to Itinerary">+ Tambah ke Itinerary</button>
+    </div>
+  </div>
+
+  <div class="map-list" id="mapList">
+    <button class="map-list-item" data-loc="rumah">
+      <span class="map-list-number" style="background:#6b4226">1</span>
+      <span class="map-list-text"><strong>Rumah Adat</strong><small>Permukiman · 20 Menit</small></span>
+    </button>
+    <button class="map-list-item" data-loc="masjid">
+      <span class="map-list-number" style="background:#4a6741">2</span>
+      <span class="map-list-text"><strong>Masjid Kampung</strong><small>Tempat Ibadah · 15 Menit</small></span>
+    </button>
+    <button class="map-list-item" data-loc="sungai">
+      <span class="map-list-number" style="background:#3d6e8c">3</span>
+      <span class="map-list-text"><strong>Sungai Ciwulan</strong><small>Alam · 15 Menit</small></span>
+    </button>
+    <button class="map-list-item" data-loc="sawah">
+      <span class="map-list-number" style="background:#8aa65c">4</span>
+      <span class="map-list-text"><strong>Sawah Terasering</strong><small>Pertanian · 30 Menit</small></span>
+    </button>
+    <button class="map-list-item" data-loc="hutan">
+      <span class="map-list-number" style="background:#2e4a2b">5</span>
+      <span class="map-list-text"><strong>Hutan Larangan</strong><small>Kawasan Suci · 10 Menit (Hanya dari batas luar)</small></span>
+    </button>
+    <button class="map-list-item" data-loc="jalur">
+      <span class="map-list-number" style="background:#b4552d">6</span>
+      <span class="map-list-text"><strong>Tangga Seribu</strong><small>Akses Utama · 15 Menit</small></span>
+    </button>
+  </div>
+</div>
         <p
           class="map-hint reveal"
           data-id="Tip: klik penanda pada peta untuk membuka detail lokasi."

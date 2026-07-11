@@ -188,61 +188,56 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
-  const mapPins = document.querySelectorAll(".map-pin");
-  const mapPanel = document.getElementById("mapPanel");
-  const closeMapPanel = document.getElementById("closeMapPanel");
+const mapPins = document.querySelectorAll(".map-pin");
+const mapListItems = document.querySelectorAll(".map-list-item");
+const mapPanel = document.getElementById("mapPanel");
+const closeMapPanel = document.getElementById("closeMapPanel");
+const panelTag = document.getElementById("panelTag");
+const panelTitle = document.getElementById("panelTitle");
+const panelDesc = document.getElementById("panelDesc");
+const panelFact = document.getElementById("panelFact");
+const panelDuration = document.getElementById("panelDuration");
+const panelRules = document.getElementById("panelRules");
 
-  function openMapPanel(locKey) {
-    const d = locationData[locKey];
-    if (!d) return;
-    document.getElementById("panelTag").textContent = d.tag[currentLang];
-    document.getElementById("panelTitle").textContent = d.title[currentLang];
-    document.getElementById("panelDesc").textContent = d.desc[currentLang];
-    document.getElementById("panelFact").textContent = d.fact[currentLang];
-    document.getElementById("panelDuration").textContent =
-      d.duration[currentLang];
-    const rulesList = document.getElementById("panelRules");
-    rulesList.innerHTML = d.rules[currentLang]
-      .map((r) => `<li>${r}</li>`)
-      .join("");
-    mapPanel.classList.add("is-open");
-    mapPins.forEach((p) => p.classList.remove("active"));
+function openLocation(loc) {
+  const data = mapData[loc];
+  if (!data) return;
+
+  if (panelImageEl) {
+    if (data.image) {
+      panelImageEl.src = data.image;
+      panelImageEl.style.display = "block";
+    } else {
+      panelImageEl.style.display = "none";
+    }
   }
 
-  mapPins.forEach((pin) => {
-    pin.addEventListener("click", () => {
-      const loc = pin.getAttribute("data-loc");
-      const data = mapData[loc];
+  panelTag.textContent = data.tag;
+  panelTitle.textContent = data.title;
+  panelDesc.textContent = data.desc;
+  panelFact.textContent = data.fact;
+  panelDuration.textContent = data.duration;
+  panelRules.innerHTML = data.rules.map((r) => `<li>${r}</li>`).join("");
 
-      if (data) {
-        if (panelImageEl) {
-          if (data.images) {
-            panelImageEl.src = data.images;
-            panelImageEl.style.display = "block";
-          } else {
-            panelImageEl.style.display = "none";
-          }
-        }
+  mapPanel.classList.add("is-open");
 
-        panelTitle.textContent = data.title;
-        panelDesc.textContent = data.desc;
-        panelFact.textContent = data.fact;
+  mapPins.forEach((p) => p.classList.toggle("active", p.getAttribute("data-loc") === loc));
+  mapListItems.forEach((item) => item.classList.toggle("active", item.getAttribute("data-loc") === loc));
+}
 
-        document.getElementById("panelDuration").textContent = data.duration;
+mapPins.forEach((pin) => {
+  pin.addEventListener("click", () => openLocation(pin.getAttribute("data-loc")));
+});
 
-        const rulesList = document.getElementById("panelRules");
-        if (rulesList) {
-          rulesList.innerHTML = data.rules.map((r) => `<li>${r}</li>`).join("");
-        }
+mapListItems.forEach((item) => {
+  item.addEventListener("click", () => openLocation(item.getAttribute("data-loc")));
+});
 
-        mapPanel.classList.add("is-open");
-      }
-    });
-  });
-
-  closeMapPanel.addEventListener("click", () =>
-    mapPanel.classList.remove("is-open"),
-  );
+closeMapPanel.addEventListener("click", () => {
+  mapPanel.classList.remove("is-open");
+  mapPins.forEach((p) => p.classList.remove("active"));
+  mapListItems.forEach((item) => item.classList.remove("active"));
+});
 
   const checkItems = document.querySelectorAll(".check-item");
   const progressFill = document.getElementById("progressFill");
