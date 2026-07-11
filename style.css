@@ -615,7 +615,6 @@ section {
   margin-top: 0.3rem;
 }
 
-
 /* ===== Legenda kategori ===== */
 .map-legend {
   display: flex;
@@ -1030,7 +1029,6 @@ section {
   margin-bottom: var(--sp-3);
 }
 
-
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1115,10 +1113,14 @@ section {
   box-shadow: var(--shadow-hover);
 }
 .product-card .photo {
-  aspect-ratio: 1/1;
-  background: linear-gradient(150deg, var(--c-wood), var(--c-terracotta));
   position: relative;
   overflow: hidden;
+}
+
+.product-card .photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .product-card .eco-tag {
   position: absolute;
@@ -1224,7 +1226,6 @@ section {
   margin-top: 0.3rem;
 }
 
-
 .dashboard-section {
   background: var(--accent-dark);
   color: #fff;
@@ -1265,7 +1266,6 @@ section {
   color: rgba(255, 255, 255, 0.75);
   margin-top: 0.2rem;
 }
-
 
 .quiz-box {
   max-width: 620px;
@@ -1323,7 +1323,6 @@ section {
   color: var(--accent-dark);
 }
 
-
 .tour-viewer {
   aspect-ratio: 16/8;
   border-radius: var(--radius);
@@ -1350,10 +1349,10 @@ section {
 #panelImage {
   width: 100%;
   height: 140px;
-  object-fit: cover; 
-  border-radius: 8px; 
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 0.8rem;
-  display: none; 
+  display: none;
 }
 .tour-caption {
   position: absolute;
@@ -1372,7 +1371,6 @@ section {
   gap: 0.6rem;
   margin-top: var(--sp-2);
 }
-
 
 .calendar-legend {
   display: flex;
@@ -1441,7 +1439,6 @@ section {
 .cal-cell.has-event:hover {
   border-color: var(--accent);
 }
-
 
 .stepper-bar {
   display: flex;
@@ -1548,7 +1545,6 @@ section {
   margin-top: 0.8rem;
 }
 
-
 .faq-item {
   border-bottom: 1px solid var(--border);
 }
@@ -1580,7 +1576,6 @@ section {
 .faq-answer p {
   padding: 0 0.2rem 1.1rem;
 }
-
 
 footer {
   background: var(--c-text);
@@ -1643,7 +1638,6 @@ footer {
   color: rgba(255, 255, 255, 0.55);
 }
 
-
 .sticky-cta {
   position: fixed;
   bottom: var(--sp-2);
@@ -1655,7 +1649,6 @@ footer {
 .sticky-cta.is-visible {
   transform: translateY(0);
 }
-
 
 @media (max-width: 900px) {
   .about-grid {
@@ -1704,7 +1697,16 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
-.section-reveal, section, .map-container, #map, #checklist, #dashboard, #quiz, #tour, #plan, #faq {
+.section-reveal,
+section,
+.map-container,
+#map,
+#checklist,
+#dashboard,
+#quiz,
+#tour,
+#plan,
+#faq {
   opacity: 1 !important;
   transform: none !important;
   visibility: visible !important;
@@ -1728,4 +1730,3 @@ select:focus-visible {
     height: 350px;
   }
 }
-
